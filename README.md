@@ -1,0 +1,5 @@
+# CHeck
+
+```sh
+cargo run
+```
