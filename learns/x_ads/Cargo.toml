@@ -1,0 +1,19 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1" # For using async functions in traits
+reqwest = { version = "0.12", features = ["json"] } # HTTP client
+serde = { version = "1.0", features = ["derive"] } # Serialization/deserialization framework
+serde_json = "1.0" # JSON support for Serde
+thiserror = "1.0" # Error handling library
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] } # Asynchronous runtime
+url = "2.5" # For URL construction and query parameters
+oauth-client = "0.8" # OAuth 1.0a client
+
+[dev-dependencies]
+mockall = "0.12" # For creating mock objects in tests
